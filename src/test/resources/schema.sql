@@ -40,11 +40,11 @@ CREATE TABLE airtype (
   g_force        DOUBLE
 );
 
-CREATE TABLE user (
+CREATE TABLE users (
   id         BIGSERIAL,
   username   VARCHAR,
   password   VARCHAR,
-  name       VARCHAR,x
+  name       VARCHAR,
   surname    VARCHAR,
   airline_id BIGINT,
   role       INTEGER,

@@ -7,10 +7,10 @@ import java.util.Map;
 
 @Value
 public class SafetyResponse {
-    private Map<LocalDate, Double> roolExceedProbabilities;
-    private Map<LocalDate, Double> takeOffPitchExceedProbabilities;
-    private Map<LocalDate, Double> landPitchExceedProbabilities;
-    private Map<LocalDate, Double> gforceExceedProbabilities;
-    private Map<LocalDate, Double> overallExceedProbabilities;
+    private Map<LocalDate, Double> roolExceedProbabilities; // Крен
+    private Map<LocalDate, Double> takeOffPitchExceedProbabilities; // Тангаж на взлете
+    private Map<LocalDate, Double> landPitchExceedProbabilities; // Тангаж на посадке
+    private Map<LocalDate, Double> gforceExceedProbabilities; //Перегрузка
+    private Map<LocalDate, Double> overallExceedProbabilities; // Вероятность что хоть одно из вышеперечисленный проявится
 
 }

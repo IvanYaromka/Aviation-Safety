@@ -2,6 +2,7 @@ package by.yaromka.aviation.safety.domain.entity.user;
 
 import by.yaromka.aviation.safety.domain.entity.user.role.Role;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -9,6 +10,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 @Data
+@NoArgsConstructor
 public class User implements UserDetails {
     private Long id;
     private String username;

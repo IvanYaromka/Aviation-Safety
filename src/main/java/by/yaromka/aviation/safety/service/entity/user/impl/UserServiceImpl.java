@@ -5,6 +5,10 @@ import by.yaromka.aviation.safety.domain.util.page.Page;
 import by.yaromka.aviation.safety.repository.user.UserRepository;
 import by.yaromka.aviation.safety.service.entity.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -12,10 +16,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@ComponentScan(basePackages = "by.yaromka.aviation")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository repository;
     @Autowired
+    @Qualifier("encoder")
     private PasswordEncoder encoder;
 
     @Override

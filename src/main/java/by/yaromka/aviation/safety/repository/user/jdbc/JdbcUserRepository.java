@@ -81,7 +81,7 @@ public class JdbcUserRepository implements UserRepository {
                                           .addValue("surname", entity.getSurname())
                                           .addValue("airline_id", entity.getAirlineId())
                                           .addValue("role", entity.getRole().ordinal())
-                                          .addValue("enabled", entity.isEnabled());
+                                          .addValue("enable", entity.isEnabled());
     }
 
     @Override

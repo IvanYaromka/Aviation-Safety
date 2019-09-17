@@ -20,7 +20,7 @@ public class UserMapper implements RowMapper<User> {
         result.setSurname(rs.getString("surname"));
         result.setAirlineId(rs.getLong("airline_id"));
         result.setRole(Role.valueOf(rs.getInt("role")));
-        result.setEnabled(rs.getBoolean("enabled"));
+        result.setEnabled(rs.getBoolean("enable"));
         return result;
     }
 }

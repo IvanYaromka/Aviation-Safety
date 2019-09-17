@@ -2,6 +2,7 @@ package by.yaromka.aviation.safety.security.config;
 
 import by.yaromka.aviation.safety.security.auth.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -36,6 +37,7 @@ public class Config extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
+    @Qualifier("encoder")
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
