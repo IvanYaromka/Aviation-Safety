@@ -1,15 +1,6 @@
-
-rool - 25-40
-take_off_pitch - 20-35
-land_pitch - 20-35
-g_force - 1,7 - 2,2
-
-
-
-INSERT INTO users (id, username, password, name, surname, airline_id, role, enable) VALUES
-(1, 'First', 'First', 'First', 'First', 1, 1, true),
-(2, 'Second', 'Second', 'Second', 'Second', 2, 2, true);
-
+-- To log in use login: Third and password: Third
+INSERT INTO users (username, password, name, surname, airline_id, role, enable) VALUES
+('Third', '$2a$10$5ZvMgetGGM3164j2cTjBdORF3mbSgCXvDpK6M6CmFXq/R5xpLqiSa', 'First', 'First', 1, 1, true);
 
 insert into country (name) values ('Grenada');
 insert into country (name) values ('Ukraine');
